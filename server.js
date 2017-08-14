@@ -9,7 +9,17 @@ app.use(morgan('combined'));
 app.get('/article-one', function(req,res){
     res.send('Article one requested and will be served here');
 });
-
+  
+var counter=0;
+app.get('/counter',function(req,res){
+    counter=counter+1;
+    res.send(counter.toString());
+});
+  
+  
+  
+  
+  
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
