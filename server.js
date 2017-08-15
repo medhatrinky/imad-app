@@ -37,9 +37,9 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 var names=[];
-app.get('/submit-name/:name',function(req,res){
+app.get('/submit-name',function(req,res){
     //get the name from request
-    var name=req.params.name;
+    var name=req.query.name;
     names.push(name);
     res.send(JSON.stringify(names));
    res.send 
