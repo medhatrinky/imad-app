@@ -11,7 +11,7 @@ button.onclick=function(){
             if (request.status===200){
                 var names=request.responseText;
                 names=JSON.parse(names);
-              var names=['name1','name2','name3','name4'];
+              
     var list='';
     for(i=0;i<names.length;i++)
     {
