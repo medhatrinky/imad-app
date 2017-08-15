@@ -1,5 +1,3 @@
-
-
 //counter code 
 var button=document.getElementById('counter');
 
@@ -21,3 +19,5 @@ button.onclick=function(){
     request.open('GET','http://medhabobbili.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+
+
